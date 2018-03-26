@@ -26,6 +26,7 @@
           item.addEventListener('click',(e)=>{
             e.preventDefault();
             let link=item.textContent;
+            // 第一个参数是自定义传参，第二个是title，第三个是跳转链接
             window.history.pushState({name:'api'},link,link);
           },false)
         });
